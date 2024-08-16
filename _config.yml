@@ -1,0 +1,76 @@
+# Basic site setup
+title: QIB Datasets
+description: A repository of datasets generated at the Quadram Institute Bioscience, Norwich, UK
+accent_colour: "#951A00"
+theme_version: 1.0.15
+
+
+# Optional native feature customisation (delete to turn off)
+table_of_contents_header: "Jump to:"
+table_of_contents_collapsible: true
+google_analytics:
+replace_read_time_with_word_count: true
+show_excerpts_html: true
+open_external_links_in_new_tab: true
+
+# Third party feature customisation (delete to turn off)
+# # Network site picker
+# network:
+#   - { name: Quadram Institute Bioscience, url: "https://www.quadram.ac.uk", colour: "#218f81" }
+#   - {
+#       name: Internet History,
+#       url: "https://history.jakelee.co.uk",
+#       colour: "#075e78",
+#     }
+#   - { name: Theme, url: "https://minima.jakelee.co.uk", colour: "#951A00" }
+#   - { name: Cat Charity, url: "https://news.codecured.org", colour: "#111b6d" }
+#   - {
+#       name: Fragments,
+#       url: "https://fragments.jakelee.co.uk",
+#       colour: "#ad33a9",
+#     }
+#   - { name: Everything Else, url: "https://jakelee.co.uk", colour: "#acacac" }
+
+# Social / dark mode settings
+minima:
+  skin: auto
+  social_links:
+    - { platform: github, user_url: "https://github.com/quadram-institute-bioscience" }
+    - { platform: x, user_url: "https://www.x.com/QibCoreBioinfo" }
+    - { platform: rss, user_url: "/feed.xml", user_title: "RSS Feed" }
+  #   - { platform: devto,          user_url: "https://dev.to/jekyll" }
+  #   - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
+  #   - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
+  #   - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
+  #   - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
+  #   - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
+  #   - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
+  #   - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
+  #   - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
+  #   - { platform: telegram,       user_url: "https://t.me/jekyll" }
+  #   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
+
+###
+# Below here probably doesn't need changing #
+###
+
+# Site settings
+permalink: /:title/
+timezone: Europe/London
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Pagination settings
+paginate: 10
+paginate_path: page/:num/
+
+# Syntax highlighter settings
+kramdown:
+  syntax_highlighter_opts:
+    default_lang: kotlin
+    guess_lang: true
