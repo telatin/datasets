@@ -1,78 +1,115 @@
-# Basic site setup
-title: QIB Datasets
-description: A repository of datasets generated at the Quadram Institute Bioscience, Norwich, UK
-#accent_colour: "#067464"
-accent_colour: "#b5bd00"
-theme_version: 1.0.15
-url: https://telatin.github.io
-baseurl: "/datasets"
-
-# Optional native feature customisation (delete to turn off)
-table_of_contents_header: "Jump to:"
-table_of_contents_collapsible: true
-google_analytics:
-replace_read_time_with_word_count: true
-show_excerpts_html: true
-open_external_links_in_new_tab: true
-
-# Third party feature customisation (delete to turn off)
-# # Network site picker
-# network:
-#   - { name: Quadram Institute Bioscience, url: "https://www.quadram.ac.uk", colour: "#218f81" }
-#   - {
-#       name: Internet History,
-#       url: "https://history.jakelee.co.uk",
-#       colour: "#075e78",
-#     }
-#   - { name: Theme, url: "https://minima.jakelee.co.uk", colour: "#951A00" }
-#   - { name: Cat Charity, url: "https://news.codecured.org", colour: "#111b6d" }
-#   - {
-#       name: Fragments,
-#       url: "https://fragments.jakelee.co.uk",
-#       colour: "#ad33a9",
-#     }
-#   - { name: Everything Else, url: "https://jakelee.co.uk", colour: "#acacac" }
-
-# Social / dark mode settings
-minima:
-  skin: auto
-  social_links:
-    - { platform: github, user_url: "https://github.com/quadram-institute-bioscience" }
-    - { platform: x, user_url: "https://www.x.com/QibCoreBioinfo" }
-    - { platform: rss, user_url: "/feed.xml", user_title: "RSS Feed" }
-  #   - { platform: devto,          user_url: "https://dev.to/jekyll" }
-  #   - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
-  #   - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
-  #   - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-  #   - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
-  #   - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
-  #   - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
-  #   - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
-  #   - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
-  #   - { platform: telegram,       user_url: "https://t.me/jekyll" }
-  #   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
-
-###
-# Below here probably doesn't need changing #
-###
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-permalink: /:title/
-timezone: Europe/London
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: MM
+email:
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+twitter_username: username
+github_username: username
+minimal_mistakes_skin: default
+search: true
 
 # Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
 plugins:
-  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
-# Pagination settings
-paginate: 10
-paginate_path: page/:num/
+author:
+  name   : "First Lastname"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "My awesome biography constrained to a sentence or two goes here."
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
 
-# Syntax highlighter settings
-kramdown:
-  syntax_highlighter_opts:
-    default_lang: kotlin
-    guess_lang: true
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

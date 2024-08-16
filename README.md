@@ -1,42 +1,27 @@
-# minimaJake
+# Minimal Mistakes remote theme starter
 
-This project is a fork of the default [minima theme](https://github.com/jekyll/minima) that [Jekyll](https://github.com/jekyll/jekyll) uses, aiming to add enough functionality to make minima a realistic choice, without any bloat / nonsense.
+Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
 
-## About
+Contains basic configuration to get you a site with:
 
-minimaJake is used to host [JakeSteam](https://github.com/JakeSteam)'s [personal](https://jakelee.co.uk), [programming](https://blog.jakelee.co.uk), and [internet history](https://history.jakelee.co.uk) sites.
+- Sample posts.
+- Sample top navigation.
+- Sample author sidebar with social links.
+- Sample footer links.
+- Paginated home page.
+- Archive pages for posts grouped by year, category, and tag.
+- Sample about page.
+- Sample 404 page.
+- Site wide search.
 
-A live demo is available at [minima.jakelee.co.uk](https://minima.jakelee.co.uk), and a full guide to all launch features is available in [the announcement post](https://blog.jakelee.co.uk/introducing-minimajake-for-jekyll/).
+Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
-## How to use
+---
 
-The easiest way is to just [copy the `_config.yml`](https://github.com/JakeSteam/blog-programming/blob/main/_config.yml) from one of the blogs using this theme, updating the name / accent colour etc as desired.
+## Troubleshooting
 
-The theme is imported via `remote_theme: JakeSteam/minimaJake` in your `config.yml`, optionally adding `@1.0.12` to specify a release from [the releases page](https://github.com/JakeSteam/minimaJake/releases).
+If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
 
-## Additions
-
-Native (liquid) features:
-
-- Table of contents (toggleable & collapsible)
-- Linkable headers
-- Tag system
-- Pagination improvements
-- End of post call to action
-- Social & meta link system in footer
-- Network site picker
-- Plaintext or HTML excerpts (`show_excerpts` / `show_excerpts_html`)
-- Read time / word count (`replace_read_time_with_word_count`)
-- Search
-
-Third party features:
-
-- Giscus comments
-- Configurable Ko-fi donation button & floating prompt
-
-Design changes:
-
-- Banner images
-- Accent colour system
-
-[![](https://blog.jakelee.co.uk/assets/images/2023/minimajake.png)](https://blog.jakelee.co.uk/assets/images/2023/minimajake.png)
+- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
+- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
+- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
