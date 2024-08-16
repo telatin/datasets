@@ -1,5 +1,5 @@
 ---
-title: Introducing 'minimaJake', a minima theme fork for Jekyll with years of improvements & design changes!
+title: Introducing 'datasets'
 author: Jake Lee
 layout: post
 image: {{ site.baseurl }}/assets/images/2023/minimajake.png
