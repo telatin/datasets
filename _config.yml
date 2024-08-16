@@ -1,7 +1,7 @@
 # Basic site setup
 title: QIB Datasets
 description: A repository of datasets generated at the Quadram Institute Bioscience, Norwich, UK
-accent_colour: "#951A00"
+accent_colour: "#067464"
 theme_version: 1.0.15
 url: https://telatin.github.io/datasets/
 
