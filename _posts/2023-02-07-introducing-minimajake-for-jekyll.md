@@ -2,7 +2,7 @@
 title: Introducing 'datasets'
 author: Jake Lee
 layout: post
-image: {{ site.baseurl }}/assets/images/2023/minimajake.png
+image: {{ site.url }}{{ site.baseurl }}/assets/images/2023/minimajake.png
 tags:
     - Minima
     - Jekyll
@@ -12,7 +12,7 @@ tags:
 Over the last few years I've slowly added functionality to the default Jekyll "minima" theme, and recently [made it all publicly available]({{ site.baseurl }}/merging-multiple-jekyll-codebases-into-one/). Here's a description of & integration details for all the new features minimaJake offers, from comments to Ko-fi support to accent colouring!
 
 *Note that this post is reposted entirely from <{{ site.baseurl }}/introducing-minimajake-for-jekyll/>.*
-<link rel="canonical" href="{{ site.baseurl }}/introducing-minimajake-for-jekyll">
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/introducing-minimajake-for-jekyll">
 
 ## How to use minimaJake
 
